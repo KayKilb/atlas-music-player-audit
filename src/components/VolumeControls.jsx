@@ -1,3 +1,4 @@
+// VolumeControl.js
 import React from 'react';
 import { SpeakerWaveIcon } from '@heroicons/react/24/solid';
 
@@ -11,22 +12,22 @@ const VolumeControl = () => {
         min="0"
         max="100"
         defaultValue="50"
-        className="w-full h-2 bg-lightPink rounded-full appearance-none cursor-pointer"
-        style={{
-          background: 'linear-gradient(to right, #FF66B2 50%, #FFCCEB 50%)', // Adjust gradient colors
-        }}
+        className="volume-slider w-full h-2 rounded-full appearance-none cursor-pointer"
       />
       <style jsx>{`
-        input[type='range']::-webkit-slider-thumb {
+        .volume-slider {
+          background: linear-gradient(to right, #FF66B2 50%, #FFCCEB 50%);
+        }
+        .volume-slider::-webkit-slider-thumb {
           width: 18px;
           height: 18px;
-          background-color: #FF66B2; /* fuchsia */
+          background-color: #FF66B2;
           border-radius: 50%;
           cursor: pointer;
           -webkit-appearance: none;
           appearance: none;
         }
-        input[type='range']::-moz-range-thumb {
+        .volume-slider::-moz-range-thumb {
           width: 18px;
           height: 18px;
           background-color: #FF66B2;

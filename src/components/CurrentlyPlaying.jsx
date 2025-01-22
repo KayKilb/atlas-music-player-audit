@@ -2,7 +2,7 @@ import React from 'react';
 import CoverArt from './CoverArt';
 import SongTitle from './SongTitle';
 import PlayControls from './PlayControls';
-import VolumeControl from './VolumeControl';
+import VolumeControls from './VolumeControls';
 import placeholder from '../assets/placeholder.jpg';
 
 export default function CurrentlyPlaying() {
@@ -11,7 +11,7 @@ export default function CurrentlyPlaying() {
       <CoverArt coverImage={placeholder} />
       <SongTitle title="Pink Pony Club" artist="Chappell Roan" />
       <PlayControls />
-      <VolumeControl />
+      <VolumeControls />
     </div>
   );
 }

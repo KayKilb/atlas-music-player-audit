@@ -1,11 +1,14 @@
+// PlayListItem.jsx
 import React from 'react';
 
-const PlayListItem = ({ title, genre, length }) => {
+const PlayListItem = ({ title, artist, length }) => {
   return (
-    <div className="playlist-item p-2 border-b border-gray-200 flex justify-between items-center text-sm md:text-base">
-      <div className="flex-1 text-base font-medium text-left">{title}</div>
-      <div className="text-xs md:text-sm text-gray-500 text-left w-1/4">{genre}</div>
-      <div className="text-xs md:text-sm text-gray-500 text-right w-1/4">{length}</div>
+    <div className="playlist-item p-4 flex justify-between items-center bg-white hover:bg-gray-100 rounded-lg shadow-sm">
+      <div className="text-left">
+        <h3 className="text-base font-semibold text-gray-900">{title}</h3>
+        <p className="text-sm text-gray-500">{artist}</p>
+      </div>
+      <span className="text-sm text-gray-500">{length}</span>
     </div>
   );
 };
